@@ -1,12 +1,23 @@
-body{background-color: rgb(233, 232, 232);}
-#titular{color: rgb(77, 164, 170); font-size: 60px;}
-/* esto es un comentario*/
+body{background-color: #6D9773;}
+
+#nombreylogo{
+  display: block;
+  width: 1304px;
+  border: 5px solid rgb(253, 253, 253);
+  padding: 10px; 
+  margin: 10px;
+}
+
+#titular{color: rgb(0, 0, 0); font-size: 60px; text-align: center;}
+
+
 #navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #0C3B2E;
+    border-radius: 5px;
   }
   
   li {
@@ -17,15 +28,29 @@ body{background-color: rgb(233, 232, 232);}
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 45px;
     text-decoration: none;
   }
   
+  /* preguntar bien qué es ésto */
   li a:hover {
-    background-color: #111;
+    background-color: #0C3B2E;
   }
 
-.elemento{
-    margin-top: 15px;
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+}
 
+li {
+  float: center;
+}
+
+.elemento{
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
 }
