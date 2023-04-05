@@ -1,7 +1,7 @@
 body{background-color: #6D9773;}
 
 #nombreylogo{
-  display: block;
+  /*display: block; */
   width: 1304px;
   border: 5px solid rgb(253, 253, 253);
   padding: 10px; 
@@ -12,7 +12,6 @@ body{background-color: #6D9773;}
 
 .active{
   font-size: 20px;
-  /* margin-left: 70px ; */
 }
 
 #navbar {
@@ -23,38 +22,24 @@ body{background-color: #6D9773;}
     background-color: #0C3B2E;
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    justify-content: center;
     /* preguntar cómo alinear en el centro los items de la navbar */
   }
   
-  li {
-    float: left;
-  }
   
   li a {
-    display: block;
+  
     color: white;
     text-align: center;
     padding: 6px 45px;
     text-decoration: none;
   }
   
-  /* preguntar bien qué es ésto */
+ 
   li a:hover {
     background-color: #10503e;
   }
-
-ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  text-align: center;
-  margin: 5px;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: center;
-}
 
 .elemento{
   list-style-position: inside;
