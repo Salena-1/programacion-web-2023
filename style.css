@@ -1,46 +1,63 @@
-body{background-color: #6D9773;}
+body{
+  background-color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-/* *{border: 1px solid red;}  */
 
+/* no funciona el tipo de letra */
+@font-face{
+  font-family: Ethereal, sans-serif;
+  src: url(./fuentes/Ethereal.ttf) format(truetype),
+       url(./fuentes/Ethereal.woff2) format(woff2);
+  font-weight: bold;
+}
+
+/* *{border: 1px solid red;}      */
+
+
+
+/* comienzo NAVBAR */
 
 #navbar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
   overflow: hidden;
-  background-color: #0C3B2E;
+  background-color: #22242f; 
   border-radius: 0.4vw;
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
    
 li a {
   color: white;
   text-align: center;
-  padding: 1vw 6vw;
+  padding: 1vw 5vw;
   text-decoration: none;
 }
  
 li a:hover {
-  background-color: #10503e;
+  background-color: #343747;
 }
 
 .active{
   font-size: 1.5vw;
 }
 
-span{
-  color: gray;
-}
 
 
+/* comienzo ENCABEZADO */
 
 .encabezado {
   width: 100%;
-  padding: 50px 0px;
-  background-image: url(./images/fondoencabezado.jpg);
-  background-size: cover;
+  padding: 2vw 0;
+  background-image: url(./images/fondonombre.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   margin: 0; 
   display: flex;
   align-items: center;
@@ -48,64 +65,80 @@ span{
 }
 
 .nombre-pag{
-  width: 550px;
+  width: 45%;
   text-align: center;
 }
 
 .nombre-pag h1{
-  color:black;
+  font-family: Ethereal;
+  color:#FEC965;
   font-size: 5vw;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
+}
+
+.nombre-pag h3{
+  font-family: Ethereal;
+  color: #FEC965;
+  font-size: medium;
 }
 
 
+
+/* comienzo PARTE 1 */
 
 .parte1 {
   width: 100%;
-  padding: 50px 0px;
+  padding: 8vh 0;     
   background-color: antiquewhite;
 }
 
+/* arreglar porcentaje de las imágenes */
 .parte1 img{
-  height: 350px;
-  width: 300px;
+  height: 18vw;
+  width: 20vw;
+  border-radius: 0.6vw;
 }
 
 .texto-parte1{
-  width: 550px;
+  width: 60%;
+  margin-left: 4vw;
 }
 
-.texto-parte1 h3{
-  color:black;
-  font-size: 45px;
-  margin-bottom: 20px;
+span{
+  color: #94442b;
 }
 
 .texto-parte1 p{
-  font-size: 22px;
-  margin-bottom: 25px;
+  font-size: 1.5vw;
+  margin-bottom: 1.6vw;
+  font-style: italic;
 }
 
 .main{
-  width: 1130px;
+  width: 90vw;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
+  justify-content: center;
+  border-left: 0.2vw outset #22242f;
+   border-right: 0.2vw outset #22242f;          /*  me aparece un borde de color diferente al otro */
+} 
 
+
+
+/* comienzo PARTE 2 */
 
 .parte2{
   background: gray;
   width: 100%;
-  padding: 25px 0px;
+  padding: 1.5625vw 0;
 }
 
 .tituloproductos h2{
   color: black;
-  font-size: 40px;
-  margin: 25px auto;
+  font-size: 2.8vw;
+  margin: 1.6vw auto;
   text-align: center;
 }
 
@@ -118,9 +151,9 @@ span{
 .carta{
   height: auto;
   width: auto;
-  padding: 15px 25px;
+  padding: 2vw 2vw;
   background-color: whitesmoke;
-  margin: 30px;
+  margin: 2vw;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -128,21 +161,21 @@ span{
 
 .descripcionfoto h6 {
   color: black;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  font-size: 1.4vw;
+  line-height: 1.25vw;
+  margin-bottom: 0.5vw;
+  margin-top: 1vw;
 }
 
 .descripcionfoto p{
   color: gray;
-  font-size: 14px;
+  font-size: 1vw;
 
 }
 
 
 /* media queries para un celular */
-@media screen and (max-width: 480px)  {
+@media (max-width: 576px)  {
   body {
     background-color: blueviolet;
   }
