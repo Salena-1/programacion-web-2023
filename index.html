@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./fuentes/Ethereal.woff2">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" ></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stella Marina</title>
-
-    <!-- cambiar el icono de la pag -->
     <link rel="icon" href="./images/gemstone.png">
 </head>
 
@@ -21,15 +20,14 @@
         </div>
     </div>
     </header>
-
-
+    
     <!-- fijarse para centrar las opciones de la barra de nav -->
     <ul id="navbar">
-        <li><a class="active" href="./nosotros.html">Nosotros</a></li>
-        <li><a class="active" href="./catalogo.html">Catálogo</a></li>
-        <li><a class="active" href="./cuidados.html">Cuidados</a></li>
-        <li><a class="active" href="./blog.html">Blog</a></li>
-        <li><a class="active" href="./pregFrec.html">Preguntas Frecuentes</a></li>
+        <li class="nv"><a href="./nosotros.html">Nosotros</a></li>
+        <li class="nv"><a href="./catalogo.html">Catálogo</a></li>
+        <li class="nv"><a href="./cuidados.html">Cuidados</a></li>
+        <li class="nv"><a href="./blog.html">Blog</a></li>
+        <li class="nv"><a href="./pregFrec.html">Preguntas Frecuentes</a></li>
     </ul>
     
     <main>
@@ -52,61 +50,95 @@
                 </div>
                <div class="caja">
                     <div class="carta">
-                        <img src="https://placehold.co/200x280" alt="producto1">
+                        <img src="images\aros1.jpg" alt="Aros Corallo">
                         <div class="descripcionfoto">
-                            <h6>Titulo</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-
-                            <p style="text-align: center;">
-                                <a class="button" href="#">Saber más</a>
-                            </p>
+                            <h6>Aros Corallo</h6>
+                            <p>Aros de oro macizo de 14k. </p>
                         </div>
                     </div>
 
                     <div class="carta">
-                        <img src="https://placehold.co/200x280" alt="producto1">
+                        <img src="images\aros2.jpg" alt="Aros Pranna">
                         <div class="descripcionfoto">
-                            <h6>Titulo</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            
-                            <p style="text-align: center;">
-                                <a class="button" href="#">Saber más</a>
-                            </p>
+                            <h6>Aros Pranna</h6>
+                            <p>Aros con detalles en oro </p>
+                            <p> <span class="span2"> - Edición Limitada -</span></p>
                         </div>
                     </div>
 
                     <div class="carta">
-                        <img src="https://placehold.co/200x280" alt="producto1">
+                        <img src="images\aros3.jpg" alt="Aros Formentera">
                         <div class="descripcionfoto">
-                            <h6>Titulo</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            
-                            <p style="text-align: center;">
-                                <a class="button" href="#">Saber más</a>
-                            </p>
+                            <h6>Aros Formentera</h6>
+                            <p>Aros de oro macizo de 14k </p>
                         </div>
                     </div>
 
                     <div class="carta">
-                        <img src="https://placehold.co/200x280" alt="producto1">
+                        <img src="images\aros4.jpg" alt="Aros Jarara">
                         <div class="descripcionfoto">
-                            <h6>Titulo</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            
-                            <p style="text-align: center;">
-                                <a class="button" href="#">Saber más</a>
-                            </p>
+                            <h6>Aros Jarara</h6>
+                            <p>Aros con detalles en oro de 18k </p>
+                            <p> <span class="span2"> - Edición Limitada -</span></p>
                         </div>
                     </div>
-
                </div>
             </div>
         </section>
 
 
+        <!-- Falta una parte más acá -->
+
+
 
     </main>
-    <footer></footer>
+
+    
+    <!-- Acá empieza el footer -->
+    <footer>
+        <div class="fila">
+            <div class="col">
+                <p class="marca">Stella Marina</p>
+                <p class="joyeria">Joyería</p>
+                <p>Para más información sobre nuevas cápsulas, productos, noticias y blogs sobre nuestras joyas te invitamos a dejar tu mail abajo y disfrutar de todas las novedades!</p>   
+            </div>
+
+            <div class="col">
+                <h3>Office</h3>
+                <p>IPTL Road</p>
+                <p>Buenos Aires, Argentina</p>
+                <p>Código postal: xxxxxxxxx</p>
+                <p class="email-id">StellaMarina@gmail.com</p>
+                <h4>+11 123456789</h4>
+            </div>
+
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li class="fot"><a href="./nosotros.html">Nosotros</a></li>
+                    <li class="fot"><a href="./catalogo.html">Catálogo</a></li>
+                    <li class="fot"><a href="./cuidados.html">Cuidados</a></li>
+                    <li class="fot"><a href="./blog.html">Blog</a></li>
+                    <li class="fot"><a href="./pregFrec.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h3>Newsletter</h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Ingrese su usuario de email" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></i></button>
+                </form>
+                <div class="iconos-redes">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

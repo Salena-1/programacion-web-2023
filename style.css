@@ -1,22 +1,13 @@
 body{
   background-color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 
-/* no funciona el tipo de letra */
-@font-face{
-  font-family: Ethereal, sans-serif;
-  src: url(./fuentes/Ethereal.ttf) format(truetype),
-       url(./fuentes/Ethereal.woff2) format(woff2);
-  font-weight: bold;
-}
-
-/* *{border: 1px solid red;}      */
+/* *{border: 1px solid red;}       */
 
 
 
-/* comienzo NAVBAR */
+/* ----------------------comienzo NAVBAR---------------------------- */
 
 #navbar {
   list-style-type: none;
@@ -30,26 +21,28 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+  
 }
    
-li a {
+.nv a {
   color: white;
   text-align: center;
   padding: 1vw 5vw;
   text-decoration: none;
+  font-size: 1.5vw;
 }
  
-li a:hover {
+.nv a:hover {
   background-color: #343747;
 }
 
-.active{
-  font-size: 1.5vw;
-}
 
 
 
-/* comienzo ENCABEZADO */
+
+/* -----------------------comienzo ENCABEZADO---------------------------- */
 
 .encabezado {
   width: 100%;
@@ -70,21 +63,21 @@ li a:hover {
 }
 
 .nombre-pag h1{
-  font-family: Ethereal;
+  font-family: 'Vollkorn SC', serif;
   color:#FEC965;
   font-size: 5vw;
   margin-bottom: 1vw;
 }
 
 .nombre-pag h3{
-  font-family: Ethereal;
+  font-family: 'Vollkorn SC', serif;
   color: #FEC965;
   font-size: medium;
 }
 
 
 
-/* comienzo PARTE 1 */
+/*  -----------------------comienzo PARTE 1 ----------------------- */
 
 .parte1 {
   width: 100%;
@@ -92,7 +85,6 @@ li a:hover {
   background-color: antiquewhite;
 }
 
-/* arreglar porcentaje de las imágenes */
 .parte1 img{
   height: 18vw;
   width: 20vw;
@@ -114,6 +106,10 @@ span{
   font-style: italic;
 }
 
+.texto-parte1 h4{
+  font-size: 1vw;
+}
+
 .main{
   width: 90vw;
   max-width: 95%;
@@ -127,40 +123,50 @@ span{
 
 
 
-/* comienzo PARTE 2 */
+/*  -----------------------comienzo PARTE 2 ----------------------- */
 
 .parte2{
-  background: gray;
+  background: #22242f;
   width: 100%;
   padding: 1.5625vw 0;
 }
 
 .tituloproductos h2{
-  color: black;
+  color: #fcd5a2;
   font-size: 2.8vw;
   margin: 1.6vw auto;
   text-align: center;
+  font-family: 'Vollkorn SC', serif;
 }
+
 
 .caja{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .carta{
-  height: auto;
-  width: auto;
-  padding: 2vw 2vw;
-  background-color: whitesmoke;
-  margin: 2vw;
+  height: 28vw;
+  width: 18vw;
+  padding: 1vw 1vw;
+  background-color: antiquewhite;
+  border-radius: 1vw;
+  margin: 1vw;
   position: relative;
   overflow: hidden;
   text-align: center;
 }
 
+.carta img{
+  height: 20vw;
+  width: 15vw;
+  border-radius: 0.3vw;
+}
+
 .descripcionfoto h6 {
-  color: black;
+  font-family: 'Vollkorn SC', serif;
+  color: #94442b;
   font-size: 1.4vw;
   line-height: 1.25vw;
   margin-bottom: 0.5vw;
@@ -170,13 +176,158 @@ span{
 .descripcionfoto p{
   color: gray;
   font-size: 1vw;
+}
 
+.span2{
+  color: #94442b;
+  font-weight: bold;
 }
 
 
-/* media queries para un celular */
+
+
+
+/*  -----------------------comienzo FOOTER ----------------------- */
+
+footer{
+  width: 100%;
+  position:relative;
+  background-color:  #22242f;
+  padding-top: 2vw;
+  padding-bottom: 2vw; 
+  font-size: 0.8vw ;
+  
+}
+
+.fila{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+
+.col{
+  flex-basis: 20%;
+  padding: 0.5vw;
+} 
+
+.marca{
+  font-family: 'Vollkorn SC', serif;
+  color: #FEC965;
+  font-size: 2vw;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+
+.joyeria{
+  font-family: 'Vollkorn SC', serif;
+  color: #FEC965;
+  font-size: 1vw;
+  text-align: center;
+}
+
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 2vw;
+  position: relative;
+}
+
+.col :nth-child(2), .col :nth-child(3){
+  flex-basis: 15%;
+}
+
+.email-id{
+  width: fit-content;
+  border-bottom: 0.2vw solid #ffffff;
+  margin: 1vw 0;
+}
+
+.fot{
+  list-style-type: none;
+  margin: 0vw;
+}
+                                       /* arreglar la parte de los links no quedó bien */
+.fot a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+form{
+  padding-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2vw solid #ffffff;
+  margin-bottom: 2vw;
+}
+
+form .far{
+  font-size: 1vw;
+  margin-right: 0.4vw;
+}
+                           /* arreglar la parte del ingreso del mail no quedó bien */
+form input{
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  outline: none;
+}
+
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid{
+  font-size: 1vw;
+  color: #ffffff;
+}
+
+.iconos-redes .fa-brands{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2vw;
+  font-size: 2vw;
+  color: #22242f;
+  background-color: #ffffff;
+  margin-right: 1.5vw;
+  cursor: pointer;
+}
+
+
+
+
+
+/*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
   body {
     background-color: blueviolet;
   }
+
+  footer{
+    bottom: unset;
+  } 
+
+  .col{
+  flex-basis: 100%;
+  } 
+  
+  .col :nth-child(2), .col :nth-child(3){
+    flex-basis: 100%;
+  }
+
+
+
+
+
 }
