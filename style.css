@@ -1,5 +1,6 @@
 body{
   background-color: #ffffff;
+  font-family: serif;
 }
 
 
@@ -20,10 +21,7 @@ body{
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-
-
-  
+  align-items: center;  
 }
    
 .nv a {
@@ -98,6 +96,7 @@ body{
 
 span{
   color: #94442b;
+  font-weight: bold ;
 }
 
 .texto-parte1 p{
@@ -108,6 +107,7 @@ span{
 
 .texto-parte1 h4{
   font-size: 1vw;
+  font-weight: bold;
 }
 
 .main{
@@ -196,6 +196,7 @@ span{
 .parte3 h3{
   font-family: 'Vollkorn SC', serif;
   font-style: italic;
+  font-size: 2vw;
   margin: 0;
 }
 
@@ -210,17 +211,17 @@ footer{
   width: 100%;
   position:relative;
   background-color:  #22242f;
-  padding: 0vw ; 
+  padding: 0.5vw ; 
   font-size: 1vw ;
   
 }
 
 .fila{
-  width: 85%;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   color: #ffffff;
 }
@@ -228,7 +229,10 @@ footer{
 
 .col{
   flex-basis: 20%;
-  padding: 0.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
 } 
 
 .marca{
@@ -251,11 +255,10 @@ footer{
   width: fit-content;
   margin-bottom: 2vw;
   position: relative;
+  font-size: 1.5vw;
 }
 
-.col :nth-child(2), .col :nth-child(3){
-  flex-basis: 15%;
-}
+
 
 .email-id{
   width: fit-content;
@@ -316,7 +319,7 @@ form button .fa-solid{
 }
 
 .iconos-redes{
-  display: flex;
+  display: flex;     /* arreglar iconos están todos corridos */
   justify-content: flex-end;
 }
 
