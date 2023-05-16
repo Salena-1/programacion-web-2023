@@ -28,13 +28,13 @@
 }
 
 .nav-link:hover{
-    color:#FEC965
+    color: #fec965 !important;
 }
 
 .navbar-toggler{
     color: antiquewhite;
 }
 
-.navbar-nav .nav-link.show {     /*   no funciona no quiero que cambie de color sino que se subraye la palabra  */
-    color: red;
-}
+
+
+
