@@ -1,0 +1,104 @@
+#marca{
+    font-family: 'Vollkorn SC', serif;
+    color:#FEC965;
+    font-size: 2.5vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+}
+
+.navbar {
+    padding: 0vw;
+
+}
+.container-fluid{
+    background-color: #22242f;
+    padding: 0vw;
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-link{
+    color: antiquewhite;
+    font-family: serif;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.nav-link:hover{
+    color:#FEC965
+}
+
+.navbar-toggler{
+    color: antiquewhite;
+}
+
+
+/* ------------------------------------------------- */
+
+body {
+    font-family: serif;
+    background-color: antiquewhite;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 3vw auto;
+    padding: 3vw;
+    background-color: #343747;
+    border: 1px solid #22242f;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    grid-gap: 2vw;
+    justify-items: center;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 0.1vw solid #ddd;
+    border-radius: 0.6vw;
+    padding: 1vw;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.06);  
+}
+.card-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.card:hover .card-image {
+    transform: scale(1.06);
+}
+
+.card-content {
+    padding: 1vw;
+}
+
+.card-title {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0 0 1vw;
+}
+
+.card-description {
+    color: #666;
+    margin: 0;
+}
+
+.card-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1vw 0 0;
+}

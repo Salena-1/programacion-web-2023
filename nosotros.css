@@ -1,6 +1,40 @@
 #marca{
     font-family: 'Vollkorn SC', serif;
     color:#FEC965;
-    font-size: 2vw;
-    margin-bottom: 1vw;
+    font-size: 2.5vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+}
+
+.navbar {
+    padding: 0vw;
+
+}
+.container-fluid{
+    background-color: #22242f;
+    padding: 0vw;
+    display: flex;
+    align-items: baseline;
+}
+
+.nav-link{
+    color: antiquewhite;
+    font-family: serif;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.nav-link:hover{
+    color:#FEC965
+}
+
+.navbar-toggler{
+    color: antiquewhite;
+}
+
+.navbar-nav .nav-link.show {     /*   no funciona no quiero que cambie de color sino que se subraye la palabra  */
+    color: red;
 }
