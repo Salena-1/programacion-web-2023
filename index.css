@@ -200,6 +200,17 @@ span{
   margin: 0;
 }
 
+.parte3 span{
+  opacity: 0;
+  transition: all 0.4 ease;
+  display: inline-block;
+}
+
+.parte3 span.fade{
+  opacity: 1;
+
+}
+
 
 
 
