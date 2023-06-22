@@ -61,6 +61,7 @@ body {
 }
 .container h1{
     text-align: center;
+    font-size: 3vw;
     color: #FEC965;
     font-family: 'Vollkorn SC', serif;
     margin-bottom: 2vw;
@@ -80,7 +81,7 @@ body {
 
 .card {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
     border: 0.1vw solid #ddd;
     border-radius: 0.6vw;
     padding: 1vw;
@@ -93,8 +94,8 @@ body {
     transform: scale(1.06);  
 }
 .card-image {
-    width: 280px;
-    height: 300px;
+    width: 24vw;
+    height: 26vw;
     transition: transform 0.3s;
     object-fit: cover;
 }
@@ -105,13 +106,13 @@ body {
 
 
 .card-content {
-    height: 170px;
+    height: 14vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     /* gap: 15px; */
-    
+    flex-wrap: nowrap;
 }
 
 .card-title {
@@ -123,21 +124,24 @@ body {
 
 .card-description {
     color: #666;
+    font-size: 1.2vw;
+    margin-bottom: 0.02vw;
 }
 
 .card-price {
-    font-size: 16px;
+    font-size: 1.4vw;
     font-weight: bold;
-    margin: 1vw 0 0;
+    margin:0;
 }
 
 .card-content button{
     background-color: antiquewhite;
-    width: 100px;
-    height: 35px;
+    width: 9vw;
+    height: 2vw;
     border-radius: 6px;
     border: none;
-    font-size: 17px;
+    font-size: 1.4vw;
+    text-align: center;
     font-weight: 300;
     cursor: pointer;
 }
@@ -157,7 +161,7 @@ body {
 
     top: 14px;
     cursor: pointer;
-    position: fixed;
+    position: relative;
     bottom: 0;
     right: 0;
 }
@@ -221,12 +225,13 @@ body {
     padding-top: 30px;
     padding-right: 30px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2.5vw;
     color: #FEC965;
 }
 
 .productosCompra{
     font-size: 17px;
+    color:white;
     position: relative;
     z-index: 1;
     display: flex;
@@ -270,7 +275,8 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     gap: 150px;
-    font-size: 27px;
+    color: white;
+    font-size: 2.4vw;
     font-weight: 700;
 }
 
@@ -278,37 +284,25 @@ body {
     font-weight: 300;
 }
 
-.contenedorCompra > button{
+#contenedorCompra > button{
     z-index: 1;
     background-color: #263143;
-    width: 300px;
-    height: 45px;
+    width: 20vw;
+    height: 3.5vw;
     border-radius: 10px ;
     border: none;
-
-    font-size: 17px;
+    color: white;
+    font-size: 1.4vw;
     font-weight: 300;
 }
 
-.contenedorCompra > button:hover{
-    background-color: white;
+#contenedorCompra > button:hover{
+    background-color: #FEC965;
     color: black;
+    border-style:groove;
 }
 
-.none>div,
-.none button, 
-.none p{
-    width: 0px;
-    height: 0px;
-    font-size: 0px;
-    border: 0px;
-}
 
-/* .soldOut{
-    background-color: red;
-    padding: 7px 10px;
-    border-radius: 10px;
-} */
 .botonTrash{
     background-color: rgba(0, 0, 0, 0);
     border:none;
