@@ -12,6 +12,7 @@
     <link rel="icon" href="./images/gemstone.png">
     <title>Catálogo</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -32,88 +33,144 @@
           </nav> 
     </header>
 
-   <h1>Catálogo de Joyería</h1>   <!--arreglar ésto -->
+    <div>
+        <img id="carrito" class="carrito" src="images\carrito-de-compras.png" alt="">
+        <div id="numero"></div>
+    </div> 
 
+
+   <!-- las cards no quedan parejas, no es responsive todo el catálogo, corregir eso -->
+
+<!-- todo lo que sigue son las cards con los 12 productos -->
     <div class="container">
-        <div class="grid">
+        <h1>- Catálogo de Joyería -</h1> 
+        <div class="grid" id="grid">
             <div class="card">
-                <img src="images\collar1.jpg" alt="Collar 1" class="card-image">
+                <img src="images\collar1.jpg" alt="Collar Aria" class="card-image">
                 <div class="card-content">
-                    <h2 class="card-title">Producto 1</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images\collar3.jpg" alt="collar 3" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Producto 2</h2>
-                    <p class="card-description">Breve descripción del producto 2.</p>
-                    <p class="card-price">$200</p>
+                    <h2 class="card-title">Collar Aria</h2>
+                    <p class="card-description">Collar combinado con pendiente de caracol y perlas.</p>
+                    <p class="card-price">$352</p>
+                    <button>Comprar</button>
                 </div>
             </div>
             <div class="card">
-                <img src="images\collar2recorte.jpg" alt="collar 2" class="card-image">
+                <img src="images\collar3.jpg" alt="Collar Nara" class="card-image">
                 <div class="card-content">
-                    <h2 class="card-title">Producto 3</h2>
-                    <p class="card-description">Breve descripción del producto 3.</p>
-                    <p class="card-price">$150</p>
-                </div>
-            </div>
-            <div class="card anillo">
-                <img src="images\anillo2.jpg" alt="anillo 2" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Producto 4</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
-                </div>
-            </div>
-            <div class="card anillo">
-                <img src="images\anillo1recorte.jpg" alt="anillo 1" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Producto 5</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
-                </div>
-            </div>
-            <div class="card anillo">
-                <img src="images\anillo3recorte.jpg" alt="anillo 3" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Producto 6</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
+                    <h2 class="card-title">Collar Nara</h2>
+                    <p class="card-description">Collar combinado oro con caracoles.</p>
+                    <p class="card-price">$251</p>
+                    <button>Comprar</button>
                 </div>
             </div>
             <div class="card">
-                <img src="images\collar1.jpg" alt="Collar 1" class="card-image">
+                <img src="images\collar2recorte.jpg" alt="Collar Lisa" class="card-image">
                 <div class="card-content">
-                    <h2 class="card-title">Producto 7</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
+                    <h2 class="card-title">Collar Lisa</h2>
+                    <p class="card-description">Collar combinado con pendiente de caracol y perlas.</p>
+                    <p class="card-price">$411</p>
+                    <button>Comprar</button>
                 </div>
             </div>
             <div class="card">
-                <img src="images\collar1.jpg" alt="Collar 1" class="card-image">
+                <img src="images\anillo2.jpg" alt="Anillo Megara" class="card-image">
                 <div class="card-content">
-                    <h2 class="card-title">Producto 8</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
+                    <h2 class="card-title">Anillo Megara</h2>
+                    <p class="card-description">Anillo bañado en oro con diseños marítimos.</p>
+                    <p class="card-price">$369</p>
+                    <button>Comprar</button>
                 </div>
             </div>
             <div class="card">
-                <img src="images\collar1.jpg" alt="Collar 1" class="card-image">
+                <img src="images\anillo1recorte.jpg" alt="Anillo Soia" class="card-image">
                 <div class="card-content">
-                    <h2 class="card-title">Producto 9</h2>
-                    <p class="card-description">Breve descripción del producto 1.</p>
-                    <p class="card-price">$100</p>
+                    <h2 class="card-title">Anillo Soia</h2>
+                    <p class="card-description">Duo de anillos bañados en oro con formas descontracturadas.</p>
+                    <p class="card-price">$621</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\anillo3recorte.jpg" alt="Anillo Idra" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Anillo Idra</h2>
+                    <p class="card-description">Anillo bañado en oro coronado con estrellas marinas.</p>
+                    <p class="card-price">$357</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\aros1.jpg" alt="Aros Corallo" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Aros Corallo</h2>
+                    <p class="card-description">Aros de oro macizo de 14k en forma de caracolas.</p>
+                    <p class="card-price">$502</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\aros2.jpg" alt="Aros Pranna" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Aros Pranna</h2>
+                    <p class="card-description">Aros de perla con detalles en oro.</p>
+                    <p class="card-price">$432</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\aros3.jpg" alt="Aros Formentera" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Aros Formentera</h2>
+                    <p class="card-description">Aros de oro macizo de 14k.</p>
+                    <p class="card-price">$468</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\collar5.jpg" alt="Collar Aida" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Collar Aida</h2>
+                    <p class="card-description">Trio de collares bañados en oro con una perla en el centro.</p>
+                    <p class="card-price">$1280</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\aros4.jpg" alt="Aros Jarara" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Aros Jarara</h2>
+                    <p class="card-description">Aros con incrustaciones de perlas y detalles en oro de 18k.</p>
+                    <p class="card-price">$630</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images\anillo5.jpg" alt="Set Aqua" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Set anillos Aqua</h2>
+                    <p class="card-description">Set de 12 anillos bañados en oro y con piedras Aquamarina.</p>
+                    <p class="card-price">$3680</p>
+                    <button>Comprar</button>
                 </div>
             </div>
         
         </div>
     </div>
 
+<!-- el resumen de compra:  -->
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar Compra</button>
+    </div>
+
+    <script src="catalogo.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
