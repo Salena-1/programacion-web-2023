@@ -183,6 +183,38 @@ span{
   font-weight: bold;
 }
 
+.ircatalogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1vw;
+}
+
+.ircatalogo .button{
+  background-color: #263143;
+  width: 20vw;
+  height: 3.5vw;
+  border-radius: 10px ;
+  border: none;
+  font-family: 'Vollkorn SC', serif;
+  color: #FEC965;
+  font-size: 1.4vw;
+  font-weight: 300;
+}
+
+.ircatalogo .button:hover{
+  background-color: white;
+  color: black;
+}
+
+a.button{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 
 
 /*  -----------------------comienzo PARTE 3 ----------------------- */
@@ -200,17 +232,7 @@ span{
   margin: 0;
 }
 
-.parte3 span{
-  opacity: 0;
-  transition: all 0.4 ease;
-  display: inline-block;
-}
-
-.parte3 span.fade{
-  opacity: 1;
-
-}
-
+/* ver de ponerle algo al texto acá */
 
 
 
@@ -244,6 +266,9 @@ footer{
   padding-bottom: 1vw;
   padding-right: 2vw;
   padding-left: 2vw;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
 } 
 
 .marca{
@@ -353,9 +378,7 @@ form button .fa-solid{
 
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
-  body {
-    background-color: blueviolet;
-  }
+ 
 
   footer{
     bottom: unset;
