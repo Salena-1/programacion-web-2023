@@ -108,6 +108,10 @@ body{
 /* parte 3 */
 .parte3{
     background-color: #22242f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
 }
 
 .pregsfrec{
@@ -116,11 +120,46 @@ body{
     align-items: stretch;
     flex-direction: column;
     text-align: center;
+
 }
 
 .pregsfrec h2{
-    font-family: serif;
+    font-family: 'Vollkorn SC', serif;
     color: #FEC965;
     font-size: 2vw;
+    margin-bottom: 1vw;
 
 }
+
+.accordion{
+    align-self: center;
+    width: 90vw;
+}
+
+.accordion-header button{
+    font-family: 'Vollkorn SC', serif;
+    color: black;
+    font-size: 1.5vw;
+    font-style: oblique;
+}
+
+.accordion-body {
+    font-family: serif;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+
+
+
+
+
+/*  -----------------------media queries para un celular ----------------------- */
+@media (max-width: 576px)  {
+ 
+
+  
+  
+  
+  
+  }
