@@ -42,34 +42,34 @@ body{
 
 .parte1 {
     width: 100%;
-    padding: 8vh 0;     
+    padding: 4vw;     
     background-color: antiquewhite;
-  }
+    align-items: center;
+}
   
 .texto-parte1{
-    width: 80%;
-    margin-left: 4vw;
-}
-
-
-.texto-parte1 p{
-    font-family: serif;
-    font-size: 1.5vw;
-    margin-bottom: 1.6vw;
-    font-style: italic;
-}
-
-
-.main{
+    background-color:#343747;
     width: 90vw;
-    max-width: 95%;
-    margin: 0 auto;
+    padding: 2vw 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 0.2vw outset #22242f;
-    border-right: 0.2vw outset #22242f;        
+    border: none;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
 } 
+
+
+.texto-parte1 p{
+    color: white;
+    font-family: serif;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 .video-container {
     position: relative;
@@ -88,10 +88,39 @@ body{
     z-index: -1;
 }
 
-.video-container .content {
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
     font-family: 'Vollkorn SC', serif;
     display: flex;
-    justify-content: center;             /*  no puedo poner en el centro de todo a la frase */
+    justify-content: center;            
     text-align: center;
-    
+} 
+.content h3{
+    font-size: 1.6vw;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* parte 3 */
+.parte3{
+    background-color: #22242f;
+}
+
+.pregsfrec{
+    width: 80vw;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pregsfrec h2{
+    font-family: serif;
+    color: #FEC965;
+    font-size: 2vw;
+
 }
