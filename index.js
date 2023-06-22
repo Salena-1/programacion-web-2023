@@ -1,33 +1,6 @@
-const Text = document.querySelector(".joyas");
-const strText = text.textContent;
-const splitText = strText.split("");
-text.textContent = "";
-for(let i=0; i < splitText.length; i++){
-    text.innerHTML += "<span>" + splitText[i] + "</span>";
-}
-
-let char = 0;
-let timer = setInterval(onTick, 50);
-
-function onTick(){
-    const span = text.querySelectorAll('span')[char];
-    span.classList.add('fade');
-    char++
-    if (char === splitText.length){
-        complete();
-        return;
-    }
-}
-
-function complete(){
-    clearInterval(timer);
-    timer= null; 
-}
-
-
-/* let email= ''
+let email= ''
 email= document.getElementById("email").value 
 localStorage.setItem("email", email);
 localStorage.getItem("email");
 localStorage.clear();
-localStorage.removeItem("email"); */
+localStorage.removeItem("email"); 

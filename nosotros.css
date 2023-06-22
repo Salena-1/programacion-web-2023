@@ -35,6 +35,63 @@
     color: antiquewhite;
 }
 
+/* --------------------- */
+body{
+    background-color: antiquewhite;
+}
+
+.parte1 {
+    width: 100%;
+    padding: 8vh 0;     
+    background-color: antiquewhite;
+  }
+  
+.texto-parte1{
+    width: 80%;
+    margin-left: 4vw;
+}
 
 
+.texto-parte1 p{
+    font-family: serif;
+    font-size: 1.5vw;
+    margin-bottom: 1.6vw;
+    font-style: italic;
+}
 
+
+.main{
+    width: 90vw;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 0.2vw outset #22242f;
+    border-right: 0.2vw outset #22242f;        
+} 
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-container .content {
+    font-family: 'Vollkorn SC', serif;
+    display: flex;
+    justify-content: center;             /*  no puedo poner en el centro de todo a la frase */
+    text-align: center;
+    
+}
