@@ -49,7 +49,7 @@ body{background-color: #6D9773;}
 
 
 
-/* redes css */
+/* redes index footer css */
 /* form{
   padding-bottom: 1vw;
   display: flex;
@@ -104,4 +104,53 @@ form button .fa-solid{
   background-color: #ffffff;
   margin-right: 1.5vw;
   cursor: pointer;
+} */
+
+
+/*  catalogo css de las grids antes: */
+/* .container {
+    max-width: 90vw;
+    margin: 3vw auto;
+    padding: 3vw;
+    background-color: #343747;
+    border: 1px solid #22242f;
+    box-shadow: 2px  5px 5px black;
+}
+.container h1{
+    text-align: center;
+    font-size: 3vw;
+    color: #FEC965;
+    font-family: 'Vollkorn SC', serif;
+    margin-bottom: 2vw;
+} */
+
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    grid-gap: 2vw;
+    justify-items: center; 
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+} */
+
+/* .card:hover .col-md-4 {
+    transform: scale(1.03);
+} 
+
+.card-content {
+    height: 14vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 } */

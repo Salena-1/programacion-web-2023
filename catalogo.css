@@ -43,45 +43,53 @@
 
 /* ------------------------------------------------- */
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
 body {
     font-family: serif;
     background-color: antiquewhite;
 }
 
-
-/* .container {
-    max-width: 90vw;
-    margin: 3vw auto;
-    padding: 3vw;
-    background-color: #343747;
-    border: 1px solid #22242f;
-    box-shadow: 2px  5px 5px black;
+.row.g-5{
+    background-color: antiquewhite;
+    margin-top: 2.5vw;
 }
-.container h1{
-    text-align: center;
-    font-size: 3vw;
+
+#compras {
+    color: white;
+    
+}
+
+#subtotalcompra {
     color: #FEC965;
+    font-weight:400 ;
     font-family: 'Vollkorn SC', serif;
-    margin-bottom: 2vw;
-} */
+}
 
 
-/* .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    grid-gap: 2vw;
-    justify-items: center; 
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 20px;
-} */
+.col-md-4{
+    background-color: antiquewhite;
+} 
 
+.position-sticky{
+    background-color:#343747;
+    margin:1vw;
+
+
+}
+
+
+
+
+button.btn.btn-primary.w-100.fincompra{
+    background-color: green;
+    font-family: 'Vollkorn SC', serif;
+    border-color: rgb(0, 117, 0);
+}
+button.btn.btn-danger.w-100.mb-2{
+    background-color:rgb(192, 33, 33);
+    font-family: 'Vollkorn SC', serif;
+    border-bottom: rgb(168, 29, 29);
+}
 
 .card {
     position: relative;
@@ -105,19 +113,6 @@ body {
     object-fit: cover;
 } 
 
-/* .card:hover .col-md-4 {
-    transform: scale(1.03);
-} 
-
-.card-content {
-    height: 14vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-*/
 
 .card-title {
     font-family: 'Vollkorn SC', serif;
@@ -156,26 +151,19 @@ body {
 
 
 
-
-
-/* agregado del carrito */
-
 .compra {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  .compra .titulo {
-    margin-right: 10px;
-  }
-  
-  .compra .eliminar {
-    color: red;
-    cursor: pointer;
-  }
-
-.col-md-4 {
-    background-color: antiquewhite;
 }
+
+.compra .titulo {
+margin-right: 10px;
+}
+
+.compra .eliminar {
+color: red;
+cursor: pointer;
+}
+
