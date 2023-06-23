@@ -298,7 +298,7 @@ footer{
 }
 
 .col ul{
-padding: 0;
+  padding: 0;
 }
 
 .fot{
@@ -314,14 +314,115 @@ padding: 0;
 
 
 
-/* HACER RESPONSIVE OTRAS PARTES DE LA PAG */
-
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
  
+  /* ----------------------comienzo NAVBAR---------------------------- */
+  #navbar {
+    justify-content: space-evenly; 
+  }
+
+  .nv a {
+    padding: 1vw 8vw;
+    font-size: 2.9vw;
+  }
+
+  /* -----------------------comienzo ENCABEZADO---------------------------- */
+  .encabezado {
+    width: 100%;
+    padding: 6vw 0;
+    background-size: 100% ;
+  }
+
+  /*  -----------------------comienzo PARTE 1 ----------------------- */
+  .parte1 {
+    padding: 4vh 0;     
+  }
+  
+  .parte1 img{
+    height: 0;
+    width: 0;
+  }
+  
+  .texto-parte1{
+    width: 94%;
+    margin-left: 2vw;
+  }
+  
+  .texto-parte1 p{
+    font-size: 3.2vw;
+    text-align: center;
+  }
+  
+  .texto-parte1 h4{
+    font-size: 3vw;
+  }
+  
+  .main{
+    width: 100vw;
+    align-items: baseline;
+    flex-direction: column-reverse;
+  } 
+
+
+  /*  -----------------------comienzo PARTE 2 ----------------------- */
+
+  .parte2{
+    width: 100%;
+    padding: 1.5625vw 0;
+  }
+
+  .tituloproductos h2{
+    font-size: 3.8vw;
+    margin: 1.vw auto;
+  }
+
+  .caja{
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .carta{
+    height: 58vw;
+    width: 48vw;
+  }
+
+  .carta img{
+    height: 40vw;
+    width: 35vw;
+  }
+
+  .descripcionfoto h6 {
+    font-size: 3.8vw;
+    line-height: 1.vw;
+    margin-bottom: 0.5vw;
+    margin-top: 2vw;
+  }
+
+  .descripcionfoto p{
+    font-size: 3vw;
+    margin: 1vw;
+  }
+  .ircatalogo .button{
+    width: 40vw;
+    height: 6vw;
+    font-size: 3vw;
+  }
+
+
+  /*  -----------------------comienzo PARTE 3 ----------------------- */
+
+  .parte3 h3{
+    font-size: 4vw;
+    margin: 1vw;
+  }
+
+  /*  -----------------------comienzo FOOTER ----------------------- */
 
   footer{
     bottom: unset;
+    font-size: 3vw ;
   } 
 
   .col{
@@ -331,9 +432,20 @@ padding: 0;
   .col :nth-child(2), .col :nth-child(3){
     flex-basis: 100%;
   }
+  .marca{
+    font-size: 5vw;
+  }
+  
+  .joyeria{
+    font-size: 3vw;
+  }
 
-
-
-
+  .col h3{
+    font-size: 4vw;
+    border-bottom: 0.2vw solid #ffffff;
+  }
+  .email-id{
+    border-bottom: 0vw solid #ffffff;
+  }
 
 }
