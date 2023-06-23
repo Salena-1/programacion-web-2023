@@ -46,3 +46,62 @@ body{background-color: #6D9773;}
   margin: 0;
   padding: 0;
 }
+
+
+
+/* redes css */
+/* form{
+  padding-bottom: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.2vw solid #ffffff;
+  margin-bottom: 2vw;
+  padding: 0vw;
+} */
+
+/* form .far{
+  font-size: 1vw;
+  margin-right: 0.4vw;
+} */
+
+/* form input{
+  width: 13vw;
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  outline: none;
+  font-size: 1vw;
+  display: flex;
+  align-self: center;
+} */
+
+/* form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid{
+  font-size: 1vw;
+  color: #ffffff;
+}
+
+.iconos-redes{
+  display: flex;     
+  justify-content: flex-end;
+}
+
+.fa-brands{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2vw;
+  font-size: 2vw;
+  color: #22242f;
+  background-color: #ffffff;
+  margin-right: 1.5vw;
+  cursor: pointer;
+} */

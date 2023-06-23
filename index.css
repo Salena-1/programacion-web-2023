@@ -4,9 +4,6 @@ body{
 }
 
 
-/* *{border: 1px solid red;}        */
-
-
 
 /* ----------------------comienzo NAVBAR---------------------------- */
 
@@ -118,7 +115,7 @@ span{
   align-items: center;
   justify-content: center;
   border-left: 0.2vw outset #22242f;
-  border-right: 0.2vw outset #22242f;          /*  me aparece un borde de color diferente al otro */
+  border-right: 0.2vw outset #22242f;        
 } 
 
 
@@ -232,8 +229,6 @@ a.button{
   margin: 0;
 }
 
-/* ver de ponerle algo al texto acá */
-
 
 
 
@@ -316,65 +311,10 @@ padding: 0;
   color: #ffffff;
 }
 
-form{
-  padding-bottom: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.2vw solid #ffffff;
-  margin-bottom: 2vw;
-  padding: 0vw;
-}
-
-form .far{
-  font-size: 1vw;
-  margin-right: 0.4vw;
-}
-
-form input{
-  width: 13vw;
-  background: transparent;
-  border: 0;
-  color: #ffffff;
-  outline: none;
-  font-size: 1vw;
-  display: flex;
-  align-self: center;
-}
-
-form button{
-  background: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-
-form button .fa-solid{
-  font-size: 1vw;
-  color: #ffffff;
-}
-
-.iconos-redes{
-  display: flex;     /* arreglar iconos están todos corridos */
-  justify-content: flex-end;
-}
-
-.fa-brands{
-  width: 2vw;
-  height: 2vw;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 2vw;
-  font-size: 2vw;
-  color: #22242f;
-  background-color: #ffffff;
-  margin-right: 1.5vw;
-  cursor: pointer;
-}
 
 
 
-
+/* HACER RESPONSIVE OTRAS PARTES DE LA PAG */
 
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {

@@ -1,22 +1,19 @@
 
-let carrito = [];  // Variable para almacenar los productos seleccionados
+let carrito = []; 
 
-function añadirAlCarrito(marcador) {        // Función para añadir un producto al carrito
-  
-  let producto = obtenerProductoPorMarcador(marcador);   // Obtener la información del producto seleccionado
-  
-  carrito.push(producto);   // Añadir el producto al carrito
-  
-  mostrarCarrito(); // Actualizar el carrito en el DOM
+function añadirAlCarrito(marcador) {   // con los marcadores que están en los botones comprar de los productos del html  
+  let producto = obtenerProductoPorMarcador(marcador);   
+  carrito.push(producto);   
+  mostrarCarrito(); 
 }
 
-// Función para obtener la información de un producto por su marcador
+
 function obtenerProductoPorMarcador(marcador) {
   let productos = obtenerProductos();
   return productos.find(producto => producto.marcador === marcador);
 }
 
-// Función para obtener todos los productos disponibles
+
 function obtenerProductos() {
   return [
     {
@@ -84,7 +81,7 @@ function obtenerProductos() {
 
 
 
-// Event listener para los botones "Añadir al Carrito"
+
 let botonesCarrito = document.querySelectorAll(".btn-primary[marcador]");
 botonesCarrito.forEach(boton => {
   boton.addEventListener("click", function() {
@@ -93,32 +90,25 @@ botonesCarrito.forEach(boton => {
   });
 });
 
-// // Llamar a la función mostrarCarrito inicialmente para mostrar el carrito vacío
-// mostrarCarrito();
+
 
 function añadirAlCarrito(marcador) {
-  // Obtener la información del producto seleccionado
   let producto = obtenerProductoPorMarcador(marcador);
-  
-  // Verificar si el producto ya está en el carrito
   let productoExistente = carrito.find(item => item.marcador === marcador);
   
   if (productoExistente) {
-    // Si el producto ya existe, aumentar el contador
-    productoExistente.cantidad++;
+    productoExistente.cantidad++; //sumarle a cant
+
   } else {
-    // Si el producto no existe, agregarlo al carrito con contador inicial de 1
     producto.cantidad = 1;
     carrito.push(producto);
   }
-  
-  // Actualizar el carrito en el DOM
   mostrarCarrito();
 }
 
 function mostrarCarrito() {
   let carritoElement = document.getElementById("compras");
-  carritoElement.innerHTML = ""; // Limpiar el contenido del carrito
+  carritoElement.innerHTML = ""; 
 
   let subtotal = 0;
 
@@ -145,7 +135,6 @@ function mostrarCarrito() {
       subtotal += producto.precio * producto.cantidad;
 
 
-      // Ocultar el mensaje de éxito
       const mensajeExito = document.getElementById('mensajeExito');
       mensajeExito.style.display = 'none';
     });
@@ -157,22 +146,20 @@ function mostrarCarrito() {
 
 function eliminarDelCarrito(index) {
   const producto = carrito[index];
-  producto.cantidad--; // Reducir la cantidad en 1
+  producto.cantidad--; //restarle a cant
 
   if (producto.cantidad <= 0) {
-    carrito.splice(index, 1); // Si la cantidad es menor o igual a 0, eliminar el elemento del carrito
+    carrito.splice(index, 1); 
   }
 
-  mostrarCarrito(); // Actualizar el carrito en el DOM
+  mostrarCarrito(); 
 }
 
 function finalizarCompra() {
-  
   if (carrito.length === 0) {
     alert("No hay items en el carrito.");
     return; 
   }
-
  
   var modalCompra = new bootstrap.Modal(document.getElementById('modalCompra'));
   modalCompra.show();
@@ -184,44 +171,34 @@ function reiniciarCarrito() {
 }
 
 function completarCompra() {
-  
   var nombre = document.getElementById('nombre').value;
   var apellido = document.getElementById('apellido').value;
   var edad = document.getElementById('edad').value;
   var numeroTarjeta = document.getElementById('numeroTarjeta').value;
-
 
   if (nombre.trim() === '' || apellido.trim() === '' || isNaN(edad) || numeroTarjeta.length !== 16) {
     alert("Por favor, complete todos los campos correctamente.");
     return; 
   }
 
-
   if (parseInt(edad) < 18) {
     alert("Debe ser mayor de 18 años para realizar la compra.");
     return; 
   }
 
- 
   var modalCompra = new bootstrap.Modal(document.getElementById('modalCompra'));
   modalCompra.hide();
-
  
   alert("Su compra se ha realizado con éxito.");
-
 
   reiniciarCarrito();
 }
 
 
-
-
 var botonVaciarCarrito = document.querySelector(".vaciar-carrito");
 botonVaciarCarrito.addEventListener("click", vaciarCarrito);
 
-
 function vaciarCarrito() {
   carrito = []; 
-
   mostrarCarrito();
 }
