@@ -1,3 +1,4 @@
+/* --------------------- navbar --------------------- */
 #marca{
     font-family: 'Vollkorn SC', serif;
     color:#FEC965;
@@ -31,15 +32,15 @@
     color: #fec965 !important;
 }
 
-.navbar-toggler{
-    color: antiquewhite;
-}
 
-/* --------------------- */
+
+/* ------------------------------------------ */
+
 body{
     background-color: antiquewhite;
 }
 
+/* -------------------parte1----------------------- */
 .parte1 {
     width: 100%;
     padding: 4vw;     
@@ -70,6 +71,8 @@ body{
     text-align: center;
 }
 
+
+/* --------------------parte2---------------------- */
 
 .video-container {
     margin-top: 2.5vw;
@@ -106,7 +109,7 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* parte 3 */
+/* -------------------parte3----------------------- */
 .parte3{
     background-color: #22242f;
     display: flex;
@@ -153,13 +156,65 @@ body{
 
 
 
-/* HACER ESTA PARTE DE RESPONSIVE DEL CELU */
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
- 
+    /* --------------------- navbar --------------------- */
+    #marca{
+        font-size: 5vw;
+    }
 
+    button.navbar-toggler{   /* no funciona el boton para volver, que "suban" devuelta las opciones  */
+        background-color: #343747;
+    }
+
+    .container-fluid{
+        padding: 0vw;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .nav-link{
+        font-size: 3vw;
+    }
+
+
+    /* -------------------parte1----------------------- */
+    .parte1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .texto-parte1{
+        width: 95vw;
+        display: flex;
+    } 
+
+    .texto-parte1 p{
+        font-size: 3vw;
+        font-style:normal;
+        font-weight: 500;
+    }
+
+
+    /* --------------------parte2---------------------- */
+    .content h3{
+        font-size: 4vw;
+    }
+  
+    /* -------------------parte3----------------------- */
+    .pregsfrec h2{
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+
+    .accordion-header button{
+        font-size: 3vw;
+    }
+
+    .accordion-body {
+        font-size: 3vw;
+    }
   
   
-  
-  
-  }
+}

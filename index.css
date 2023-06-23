@@ -330,9 +330,14 @@ footer{
   /* -----------------------comienzo ENCABEZADO---------------------------- */
   .encabezado {
     width: 100%;
-    padding: 6vw 0;
+    padding: 8vw 0;
     background-size: 100% ;
   }
+
+  .nombre-pag h1{
+    font-size: 5vw;
+  }
+  
 
   /*  -----------------------comienzo PARTE 1 ----------------------- */
   .parte1 {
@@ -433,7 +438,8 @@ footer{
     flex-basis: 100%;
   }
   .marca{
-    font-size: 5vw;
+    font-size: 4.8vw;
+    margin-top: 2vw;
   }
   
   .joyeria{
@@ -441,7 +447,7 @@ footer{
   }
 
   .col h3{
-    font-size: 4vw;
+    font-size: 3.7vw;
     border-bottom: 0.2vw solid #ffffff;
   }
   .email-id{

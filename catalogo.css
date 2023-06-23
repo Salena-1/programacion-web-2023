@@ -170,7 +170,24 @@ cursor: pointer;
 /* HACER ESTA PARTE DE RESPONSIVE DEL CELU */
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
- 
+    /* --------------------- navbar --------------------- */
+    #marca{
+        font-size: 5vw;
+    }
+
+    button.navbar-toggler{   /* no funciona el boton para volver, que "suban" devuelta las opciones  */
+        background-color: #343747;
+    }
+
+    .container-fluid{
+        padding: 0vw;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .nav-link{
+        font-size: 3vw;
+    }
 
   
   
