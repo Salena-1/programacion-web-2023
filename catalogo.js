@@ -1,7 +1,7 @@
 
 let carrito = []; 
 
-function añadirAlCarrito(marcador) {   // con los marcadores que están en los botones comprar de los productos del html  
+function añadirAlCarrito(marcador) {     
   let producto = obtenerProductoPorMarcador(marcador);   
   carrito.push(producto);   
   mostrarCarrito(); 

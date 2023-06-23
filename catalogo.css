@@ -197,7 +197,7 @@ margin-right: 10px;
         font-size: 5vw;
     }
 
-    button.navbar-toggler{   /* no funciona el boton para volver, que "suban" devuelta las opciones  */
+    button.navbar-toggler{  
         background-color: #343747;
     }
 
