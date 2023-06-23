@@ -1,7 +1,4 @@
 
-/* *{border: 1px solid red;}         */
-
-
 /* navbar */
 #marca{
     font-family: 'Vollkorn SC', serif;
@@ -95,6 +92,7 @@ button.btn.btn-danger.w-100.mb-2{
 /* ------------------cards------------------------------- */
 
 .card {
+    width: 100%;
     position: relative;
     overflow: auto;
     border: 0.1vw solid #ddd;
@@ -136,8 +134,21 @@ button.btn.btn-danger.w-100.mb-2{
     margin:0;
 }
 
+.col-md-8{
+    width: 50%;
+}
+
+.col-md-4{
+    width: 40%;
+}
+
+.card-body{
+    width:100%;
+} 
+
+
 .card-body button{
-    background-color: antiquewhite;
+    background-color: rgb(212, 189, 160);
     width: 9vw;
     height: 3vw;
     border-radius: 6px;
@@ -179,7 +190,6 @@ margin-right: 10px;
 
 
 
-/* HACER ESTA PARTE DE RESPONSIVE DEL CELU */
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
     /* --------------------- navbar --------------------- */
