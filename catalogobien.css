@@ -1,6 +1,5 @@
-
-/* navbar */
-#marca{
+ /* navbar */
+ #marca{
     font-family: 'Vollkorn SC', serif;
     color:#FEC965;
     font-size: 2.5vw;
@@ -77,6 +76,8 @@ body {
 }
 
 
+
+
 button.btn.btn-primary.w-100.fincompra{
     background-color: green;
     font-family: 'Vollkorn SC', serif;
@@ -92,7 +93,6 @@ button.btn.btn-danger.w-100.mb-2{
 /* ------------------cards------------------------------- */
 
 .card {
-    width: 100%; 
     position: relative;
     overflow: auto;
     border: 0.1vw solid #ddd;
@@ -134,21 +134,8 @@ button.btn.btn-danger.w-100.mb-2{
     margin:0;
 }
 
-.col-md-8{
-    width: 50%;
-}
-
-.col-md-4{
-    width: 40%;
-}
-
-.card-body{
-    width:100%;
-} 
- 
-
 .card-body button{
-    background-color: rgb(212, 189, 160);
+    background-color: antiquewhite;
     width: 9vw;
     height: 3vw;
     border-radius: 6px;
@@ -162,6 +149,7 @@ button.btn.btn-danger.w-100.mb-2{
     background-color:#343747;
     color: antiquewhite;
 }
+
 
 /* ------------------------------------------------- */
 
@@ -177,6 +165,8 @@ margin-right: 10px;
 }
 
 .compra .eliminar {
+color: red;
+cursor: pointer;
     color: red;
     cursor: pointer;
 }
@@ -190,6 +180,7 @@ margin-right: 10px;
 
 
 
+/* HACER ESTA PARTE DE RESPONSIVE DEL CELU */
 /*  -----------------------media queries para un celular ----------------------- */
 @media (max-width: 576px)  {
     /* --------------------- navbar --------------------- */
@@ -197,7 +188,7 @@ margin-right: 10px;
         font-size: 5vw;
     }
 
-    button.navbar-toggler{  
+    button.navbar-toggler{   /* no funciona el boton para volver, que "suban" devuelta las opciones  */
         background-color: #343747;
     }
 
@@ -211,6 +202,8 @@ margin-right: 10px;
         font-size: 3vw;
     }
 
+  
+  
 
 
     /* ---------------resumen compra---------------------------------- */
@@ -225,14 +218,6 @@ margin-right: 10px;
 
     /* ------------------cards------------------------------- */
 
-    .col-md-8{
-    width: 100%;
-    }
-
-    .col-md-4{
-        width: 100%;
-    }
-    
     .card {
         height: 78vw;
         width: 45vw;
@@ -268,7 +253,4 @@ margin-right: 10px;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
-  
-  
 }
