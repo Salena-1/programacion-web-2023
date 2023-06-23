@@ -54,6 +54,8 @@ body {
     margin-top: 2.5vw;
 }
 
+/* ---------------resumen compra---------------------------------- */
+
 #compras {
     color: white;
     
@@ -78,8 +80,6 @@ body {
 }
 
 
-
-
 button.btn.btn-primary.w-100.fincompra{
     background-color: green;
     font-family: 'Vollkorn SC', serif;
@@ -90,6 +90,9 @@ button.btn.btn-danger.w-100.mb-2{
     font-family: 'Vollkorn SC', serif;
     border-bottom: rgb(168, 29, 29);
 }
+
+
+/* ------------------cards------------------------------- */
 
 .card {
     position: relative;
@@ -149,7 +152,7 @@ button.btn.btn-danger.w-100.mb-2{
     color: antiquewhite;
 }
 
-
+/* ------------------------------------------------- */
 
 .compra {
     display: flex;
@@ -163,9 +166,18 @@ margin-right: 10px;
 }
 
 .compra .eliminar {
-color: red;
-cursor: pointer;
+    color: red;
+    cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
 
 /* HACER ESTA PARTE DE RESPONSIVE DEL CELU */
 /*  -----------------------media queries para un celular ----------------------- */
@@ -189,8 +201,56 @@ cursor: pointer;
         font-size: 3vw;
     }
 
-  
-  
+
+
+    /* ---------------resumen compra---------------------------------- */
+
+    #compras {
+        font-size: 3.4vw;
+    }
+
+    #subtotalcompra {
+        font-size: 4vw;
+    }
+
+    /* ------------------cards------------------------------- */
+
+    .card {
+        height: 78vw;
+        width: 45vw;
+        display: inline-grid;
+        align-content: stretch;
+    } 
+
+    .col-md-4 img {
+        width: 50vw;
+        height: 45vw;
+    } 
+
+    .card-title {
+        font-size: 4vw;
+    }
+
+    .card-description {
+        font-size: 2.4vw;
+    }
+
+    .card-price {
+        font-size: 3vw;
+    }
+
+    .card-body button{
+        width: 18vw;
+        height: 6vw;
+        font-size: 2.6vw;
+    }
+    
+    #libros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
   
   
 }
