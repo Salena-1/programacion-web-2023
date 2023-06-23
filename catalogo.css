@@ -310,3 +310,23 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* agregado del carrito */
+
+.compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .compra .titulo {
+    margin-right: 10px;
+  }
+  
+  .compra .eliminar {
+    color: red;
+    cursor: pointer;
+  }

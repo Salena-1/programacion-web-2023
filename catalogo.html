@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/c4254e24a8.js" ></script>
     <link rel="stylesheet" href="catalogo.css">
     <link rel="icon" href="./images/gemstone.png">
+    <script defer src="./catalogo.js"></script>
     <title>Catálogo</title>
 </head>
 
@@ -32,144 +33,263 @@
           </nav> 
     </header>
 
-    <div>
-        <img id="carrito" class="carrito" src="images\carrito-de-compras.png" alt="">
-        <div id="numero"></div>
-    </div> 
+    <main>
 
+      <div class="row g-5">
+        <!-- Columna con filtros y ordenamientos -->
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 5.5rem">
+                <div class="p-4" id="compras">
+                </div>
+                <div class="p-4">
+                    <h4 class="fst-italic" id="subtotalcompra"> </h4>
+                </div>
 
-   <!-- las cards no quedan parejas, no es responsive todo el catálogo, corregir eso -->
+                <div class="p-4">
+                    <button type="button" class="btn btn-danger w-100 mb-2" onclick="vaciarCarrito()">Vaciar carrito</button>
+                  </div>
+                  
 
-<!-- todo lo que sigue son las cards con los 12 productos -->
-    <div class="container">
-        <h1>- Catálogo de Joyería -</h1> 
-        <div class="grid" id="grid">
-            <div class="card">
-                <img src="images\collar1.jpg" alt="Collar Aria" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Collar Aria</h2>
-                    <p class="card-description">Collar combinado con pendiente de caracol y perlas.</p>
-                    <p class="card-price">$352</p>
-                    <button onclick=comprar($,{i})>Comprar</button>
+                <div class="p-4">
+                    <button type="button" class="btn btn-primary w-100 fincompra" onclick="finalizarCompra()">Finalizar compra</button>
+                </div>
+
+                <div class="p-4" id="mensajeExito" style="display: none;">
+                    <div class="alert alert-success" role="alert">
+                      ¡Su compra se ha realizado con éxito!
+                    </div>
+                </div>
+                  
+                  
+            </div>
+        </div>
+
+        <div class="col-md-8" id="libros">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/collar1.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Collar Aria</h5>
+                        <p class="card-text">Collar combinado con pendiente de caracol y perlas.</p>
+                        <p class="card-text">Precio: $352</p>
+                        <button class="btn btn-primary" marcador="1">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\collar3.jpg" alt="Collar Nara" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Collar Nara</h2>
-                    <p class="card-description">Collar combinado oro con caracoles.</p>
-                    <p class="card-price">$251</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/collar3.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Collar Nara</h5>
+                        <p class="card-text">Collar combinado oro con caracoles.</p>
+                        <p class="card-text">Precio: $251</p>
+                        <button class="btn btn-primary" marcador="2">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\collar2recorte.jpg" alt="Collar Lisa" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Collar Lisa</h2>
-                    <p class="card-description">Collar combinado con pendiente de caracol y perlas.</p>
-                    <p class="card-price">$411</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/collar2recorte.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Collar Lisa</h5>
+                        <p class="card-text">Collar combinado con pendiente de caracol y perlas.</p>
+                        <p class="card-text">Precio: $411</p>
+                        <button class="btn btn-primary" marcador="3">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\anillo2.jpg" alt="Anillo Megara" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Anillo Megara</h2>
-                    <p class="card-description">Anillo bañado en oro con diseños marítimos.</p>
-                    <p class="card-price">$369</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/anillo2.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Anillo Megara</h5>
+                        <p class="card-text">Anillo bañado en oro con diseños marítimos.</p>
+                        <p class="card-text">Precio: $369</p>
+                        <button class="btn btn-primary" marcador="4">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\anillo1recorte.jpg" alt="Anillo Soia" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Anillo Soia</h2>
-                    <p class="card-description">Duo de anillos bañados en oro con formas descontracturadas.</p>
-                    <p class="card-price">$621</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/anillo1recorte.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Anillo Soia</h5>
+                        <p class="card-text">Duo de anillos bañados en oro con formas descontracturadas.</p>
+                        <p class="card-text">Precio: $621</p>
+                        <button class="btn btn-primary" marcador="5">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\anillo3recorte.jpg" alt="Anillo Idra" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Anillo Idra</h2>
-                    <p class="card-description">Anillo bañado en oro coronado con estrellas marinas.</p>
-                    <p class="card-price">$357</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/anillo3recorte.jpg">
+                </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Anillo Idra</h5>
+                            <p class="card-text">Anillo bañado en oro coronado con estrellas marinas.</p>
+                            <p class="card-text">Precio: $357</p>
+                            <button class="btn btn-primary" marcador="6">Comprar</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/aros1.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Aros Corallo</h5>
+                        <p class="card-text">Aros de oro macizo de 14k en forma de caracolas.</p>
+                        <p class="card-text">Precio: $502</p>
+                        <button class="btn btn-primary" marcador="7">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\aros1.jpg" alt="Aros Corallo" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Aros Corallo</h2>
-                    <p class="card-description">Aros de oro macizo de 14k en forma de caracolas.</p>
-                    <p class="card-price">$502</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/aros2.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Aros Pranna</h5>
+                        <p class="card-text">Aros de perla con detalles en oro.</p>
+                        <p class="card-text">Precio: $432</p>
+                        <button class="btn btn-primary" marcador="8">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\aros2.jpg" alt="Aros Pranna" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Aros Pranna</h2>
-                    <p class="card-description">Aros de perla con detalles en oro.</p>
-                    <p class="card-price">$432</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/aros3.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Aros Formentera</h5>
+                        <p class="card-text">Aros de oro macizo de 14k.</p>
+                        <p class="card-text">Precio: $468</p>
+                        <button class="btn btn-primary" marcador="9">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\aros3.jpg" alt="Aros Formentera" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Aros Formentera</h2>
-                    <p class="card-description">Aros de oro macizo de 14k.</p>
-                    <p class="card-price">$468</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/collar5.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Collar Aida</h5>
+                        <p class="card-text">Trio de collares bañados en oro con una perla en el centro.</p>
+                        <p class="card-text">Precio: $1280</p>
+                        <button class="btn btn-primary" marcador="10">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\collar5.jpg" alt="Collar Aida" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Collar Aida</h2>
-                    <p class="card-description">Trio de collares bañados en oro con una perla en el centro.</p>
-                    <p class="card-price">$1280</p>
-                    <button >Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/aros4.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Aros Jarara</h5>
+                        <p class="card-text">Aros con incrustaciones de perlas y detalles en oro de 18k.</p>
+                        <p class="card-text">Precio: $630</p>
+                        <button class="btn btn-primary" marcador="11">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\aros4.jpg" alt="Aros Jarara" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Aros Jarara</h2>
-                    <p class="card-description">Aros con incrustaciones de perlas y detalles en oro de 18k.</p>
-                    <p class="card-price">$630</p>
-                    <button>Comprar</button>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./images/anillo5.jpg">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Set anillos Aqua</h5>
+                        <p class="card-text">Set de 12 anillos bañados en oro y con piedras Aquamarina.</p>
+                        <p class="card-text">Precio: $3680</p>
+                        <button class="btn btn-primary" marcador="12">Comprar</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images\anillo5.jpg" alt="Set Aqua" class="card-image">
-                <div class="card-content">
-                    <h2 class="card-title">Set anillos Aqua</h2>
-                    <p class="card-description">Set de 12 anillos bañados en oro y con piedras Aquamarina.</p>
-                    <p class="card-price">$3680</p>
-                    <button>Comprar</button>
+        </div>
+    </main>
+    
+
+        <!-- Agrega la siguiente estructura HTML al cuerpo de tu página -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCompraLabel">Datos de compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edad" class="form-label">Edad:</label>
+                            <input type="number" class="form-control" id="edad" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numeroTarjeta" class="form-label">Número de tarjeta(16 digitos):</label>
+                            <input type="text" class="form-control" id="numeroTarjeta" required pattern="[0-9]{16}">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="completarCompra()">Finalizar compra</button>
                 </div>
             </div>
-        
         </div>
     </div>
 
-<!-- el resumen de compra:  -->
-    <div id="contenedorCompra">
-        <div class="informacionCompra" id="informacionCompra">
-            <h2>Carrito</h2>
-            <p class="x" id="x">x</p>
-        </div>
 
-        <div class="productosCompra" id="productosCompra"></div>
-        <div class="total" id="total"></div>
-        <button>Finalizar Compra</button>
-    </div>
 
-    <script src="catalogo.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
+
+
+
+
 </body>
 
 </html>
